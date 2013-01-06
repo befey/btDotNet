@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<TestRun id="8216d8b9-206b-4ae5-b5d6-4c98a12c1412" name="Brian@SPEEDYGONZALEZ 2013-01-06 11:44:16" runUser="SPEEDYGONZALEZ\Brian" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <TestSettings name="Default Test Settings" id="1ad29b3c-b405-4707-b87f-1bc27e044d3b">
+    <Deployment runDeploymentRoot="Brian_SPEEDYGONZALEZ 2013-01-06 11_44_16">
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\btDotNet.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Newtonsoft.Json.4.5.6\lib\net40\Newtonsoft.Json.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.Net.Http.2.0.20710.0\lib\net40\System.Net.Http.WebRequest.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.Razor.2.0.20710.0\lib\net40\System.Web.Razor.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll" />
+      <DeploymentItem filename="d:\brian\my documents\visual studio 2010\Projects\btDotNet\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll" />
+    </Deployment>
+    <Execution>
+      <TestTypeSpecific />
+      <AgentRule name="Execution Agents">
+      </AgentRule>
+    </Execution>
+  </TestSettings>
+  <Times creation="2013-01-06T11:44:16.6093750-05:00" queuing="2013-01-06T11:44:22.3593750-05:00" start="2013-01-06T11:44:22.6250000-05:00" finish="2013-01-06T11:44:23.5312500-05:00" />
+  <ResultSummary outcome="Warning">
+    <Counters total="1" executed="1" passed="1" error="0" failed="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <RunInfos>
+      <RunInfo computerName="SPEEDYGONZALEZ" outcome="Warning" timestamp="2013-01-06T11:44:22.3281250-05:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'log4net' directly or indirectly referenced by the test container 'd:\brian\my documents\visual studio 2010\projects\btdotnet\btdotnet.tests\bin\debug\btdotnet.tests.dll' was not found.</Text>
+      </RunInfo>
+      <RunInfo computerName="SPEEDYGONZALEZ" outcome="Warning" timestamp="2013-01-06T11:44:22.3281250-05:00">
+        <Text>Warning: Test Run deployment issue: The assembly or module 'Org.Mentalis.Security.Cryptography' directly or indirectly referenced by the test container 'd:\brian\my documents\visual studio 2010\projects\btdotnet\btdotnet.tests\bin\debug\btdotnet.tests.dll' was not found.</Text>
+      </RunInfo>
+    </RunInfos>
+  </ResultSummary>
+  <TestDefinitions>
+    <UnitTest name="Index" storage="d:\brian\my documents\visual studio 2010\projects\btdotnet\btdotnet.tests\bin\debug\btdotnet.tests.dll" id="0f56b099-fe87-101f-dee3-75fff1e39129">
+      <Execution id="9121e81c-1010-446a-855a-52cbd5567c0a" />
+      <TestMethod codeBase="d:/brian/my documents/visual studio 2010/Projects/btDotNet/btDotNet.Tests/bin/Debug/btDotNet.Tests.DLL" adapterTypeName="Microsoft.VisualStudio.TestTools.TestTypes.Unit.UnitTestAdapter, Microsoft.VisualStudio.QualityTools.Tips.UnitTest.Adapter, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" className="btDotNet.Tests.Controllers.HomeControllerTest, btDotNet.Tests, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null" name="Index" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <TestEntries>
+    <TestEntry testId="0f56b099-fe87-101f-dee3-75fff1e39129" executionId="9121e81c-1010-446a-855a-52cbd5567c0a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <Results>
+    <UnitTestResult executionId="9121e81c-1010-446a-855a-52cbd5567c0a" testId="0f56b099-fe87-101f-dee3-75fff1e39129" testName="Index" computerName="SPEEDYGONZALEZ" duration="00:00:00.2259252" startTime="2013-01-06T11:44:22.7812500-05:00" endTime="2013-01-06T11:44:23.4531250-05:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9121e81c-1010-446a-855a-52cbd5567c0a">
+    </UnitTestResult>
+  </Results>
+</TestRun>
