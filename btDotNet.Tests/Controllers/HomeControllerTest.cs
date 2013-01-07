@@ -13,20 +13,14 @@ namespace btDotNet.Tests.Controllers
     [TestClass]
     public class HomeControllerTests
     {
-        [ClassInitialize]
-        public void InitializetestDb()
-        {
-            
-        }
-
         [TestMethod]
         public void TestIndexPageLoad()
         {
             // Arrange
-            HomeController controller = new HomeController();
+            var controller = new HomeController();
 
             // Act
-            ViewResult result = controller.Index() as ViewResult;
+            var result = controller.Index() as ViewResult;
 
             // Assert
             Assert.AreEqual("The index has loaded.", result.ViewBag.Message);
