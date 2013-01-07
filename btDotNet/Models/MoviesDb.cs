@@ -66,7 +66,7 @@ namespace btDotNet.Models
 #if DEBUG
             Database.SetInitializer<MoviesDb>(new DropCreateAlwaysInitializer());
 #else
-            Database.SetInitializer<MyDbContext> (new CreateInitializer ());
+            Database.SetInitializer<MoviesDb> (new DropCreateAlwaysInitializer());
 #endif
         }
     }
