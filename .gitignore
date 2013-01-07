@@ -1,6 +1,8 @@
 btDotNet/Web.config
 btDotNet/Web.*.config
 _ReSharper.btDotNet/
+packages/
+TestResults/
 
 # Compiled source #
 ###################
