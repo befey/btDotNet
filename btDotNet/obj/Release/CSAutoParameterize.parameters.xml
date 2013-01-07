@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="ApplicationServices-Web.config Connection String" description="ApplicationServices Connection String used in web.config by the application to access the database." defaultValue="data source=tcp:wufeezpnb7.database.windows.net,1433;Initial Catalog=MoviesDb; User ID=btdnadmin@wufeezpnb7; Password=Btdna54$;Encrypt=true;Trusted_Connection=false;MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="d:\\Brian\\My\ Documents\\Visual\ Studio\ 2010\\Projects\\btDotNet\\btDotNet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='ApplicationServices']/@connectionString" />
+  </parameter>
+  <parameter name="MoviesDb-Web.config Connection String" description="MoviesDb Connection String used in web.config by the application to access the database." defaultValue="data source=tcp:wufeezpnb7.database.windows.net,1433;Initial Catalog=MoviesDb; User ID=btdnadmin@wufeezpnb7; Password=Btdna54$;Encrypt=true;Trusted_Connection=false; MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="d:\\Brian\\My\ Documents\\Visual\ Studio\ 2010\\Projects\\btDotNet\\btDotNet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='MoviesDb']/@connectionString" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="DefaultConnection Connection String used in web.config by the application to access the database." defaultValue="data source=tcp:wufeezpnb7.database.windows.net,1433;Initial Catalog=MoviesDb; tcp:wufeezpnb7.database.windows.net,1433;Encrypt=true;Trusted_Connection=false; MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="d:\\Brian\\My\ Documents\\Visual\ Studio\ 2010\\Projects\\btDotNet\\btDotNet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+</parameters>

@@ -9,10 +9,15 @@ using btDotNet.Controllers;
 
 namespace btDotNet.Tests.Controllers
 {
+    
     [TestClass]
     public class HomeControllerTests
     {
-        //[Setup]
+        [ClassInitialize]
+        public void InitializetestDb()
+        {
+            
+        }
 
         [TestMethod]
         public void TestIndexPageLoad()

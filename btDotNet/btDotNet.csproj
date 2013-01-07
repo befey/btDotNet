@@ -25,6 +25,24 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <PublishDatabaseSettings>
+      <Objects>
+        <ObjectGroup Name="DefaultConnection-Deployment" Order="1" xmlns="">
+          <Destination Path="Data Source=tcp:wufeezpnb7.database.windows.net,1433%3bInitial Catalog=MoviesDb%3bUser ID=btdnadmin%40wufeezpnb7%3bPassword=Btdna54%24" />
+          <Object Type="DbFullSql">
+            <PreSource Path="Data Source=.\SQLEXPRESS%3bInitial Catalog=MoviesDb%3bIntegrated Security=True" ScriptSchema="True" ScriptData="True" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\DefaultConnection-Deployment_SchemaAndData.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+        <ObjectGroup Name="MoviesDb-Deployment" Order="2" xmlns="" Enabled="False">
+          <Destination Path="Server=tcp:wufeezpnb7.database.windows.net,1433%3bDatabase=MoviesDb%3bUser ID=btdnadmin%40wufeezpnb7%3bPassword=Btdna54%24%3bTrusted_Connection=False%3bEncrypt=True%3bConnection Timeout=30%3b" />
+          <Object Type="DbFullSql" Enabled="True">
+            <PreSource Path="Data Source=.\SQLEXPRESS%3bInitial Catalog=aspnet-btDotNet-20130105221033%3bIntegrated Security=SSPI" ScriptSchema="True" ScriptData="False" CopyAllFullTextCatalogs="False" DriDefaults="True" />
+            <Source Path="obj\Debug\AutoScripts\MoviesDb-Deployment_SchemaOnly.sql" Transacted="True" />
+          </Object>
+        </ObjectGroup>
+      </Objects>
+    </PublishDatabaseSettings>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
@@ -311,6 +329,12 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Home\Delete.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\PublishProfiles\btdotnet - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\btDotNet - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\btdotnet - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\btDotNet - Web Deploy.pubxml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
