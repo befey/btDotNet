@@ -173,6 +173,7 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\NewsItemDbShowController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
@@ -312,20 +313,13 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\Home\Details.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Create.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Edit.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
-    <Content Include="Views\Home\Delete.cshtml" />
-  </ItemGroup>
-  <ItemGroup>
     <None Include="Properties\PublishProfiles\btdotnet - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\btdotnet - Web Deploy.pubxml" />
+    <Content Include="Views\NewsItemDbShow\Create.cshtml" />
+    <Content Include="Views\NewsItemDbShow\Delete.cshtml" />
+    <Content Include="Views\NewsItemDbShow\Details.cshtml" />
+    <Content Include="Views\NewsItemDbShow\Edit.cshtml" />
+    <Content Include="Views\NewsItemDbShow\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

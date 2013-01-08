@@ -1,33 +1,10 @@
-﻿@model IEnumerable<btDotNet.Models.NewsItem>
-
+﻿
 @{
     ViewBag.Title = "Index";
 }
 
-<h2>Index</h2>
+<h2>@ViewBag.Title</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
-<table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th></th>
-    </tr>
+<h1>@ViewBag.Message</h1>
 
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.NewsItemId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.NewsItemId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.NewsItemId })
-        </td>
-    </tr>
-}
-
-</table>
+@Html.ActionLink("View NewsItemDb", "Index", "NewsItemDbShow")
