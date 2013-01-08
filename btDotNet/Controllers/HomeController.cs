@@ -11,7 +11,7 @@ namespace btDotNet.Controllers
 {
     public class HomeController : Controller
     {
-        private MoviesDb db = new MoviesDb();
+        private BtDotNetDb db = new BtDotNetDb();
 
         //
         // GET: /Home/
@@ -19,7 +19,7 @@ namespace btDotNet.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "The index has loaded.";
-            return View(db.Movies.ToList());
+            return View(db.NewsItems.ToList());
         }
 
         //
@@ -27,12 +27,12 @@ namespace btDotNet.Controllers
 
         public ActionResult Details(int id = 0)
         {
-            Movie movie = db.Movies.Find(id);
-            if (movie == null)
+            NewsItem newsItem = db.NewsItems.Find(id);
+            if (newsItem == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+            return View(newsItem);
         }
 
         //
@@ -47,16 +47,16 @@ namespace btDotNet.Controllers
         // POST: /Home/Create
 
         [HttpPost]
-        public ActionResult Create(Movie movie)
+        public ActionResult Create(NewsItem newsItem)
         {
             if (ModelState.IsValid)
             {
-                db.Movies.Add(movie);
+                db.NewsItems.Add(newsItem);
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
-            return View(movie);
+            return View(newsItem);
         }
 
         //
@@ -64,27 +64,27 @@ namespace btDotNet.Controllers
 
         public ActionResult Edit(int id = 0)
         {
-            Movie movie = db.Movies.Find(id);
-            if (movie == null)
+            NewsItem newsItem = db.NewsItems.Find(id);
+            if (newsItem == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+            return View(newsItem);
         }
 
         //
         // POST: /Home/Edit/5
 
         [HttpPost]
-        public ActionResult Edit(Movie movie)
+        public ActionResult Edit(NewsItem newsItem)
         {
             if (ModelState.IsValid)
             {
-                db.Entry(movie).State = EntityState.Modified;
+                db.Entry(newsItem).State = EntityState.Modified;
                 db.SaveChanges();
                 return RedirectToAction("Index");
             }
-            return View(movie);
+            return View(newsItem);
         }
 
         //
@@ -92,12 +92,12 @@ namespace btDotNet.Controllers
 
         public ActionResult Delete(int id = 0)
         {
-            Movie movie = db.Movies.Find(id);
-            if (movie == null)
+            NewsItem newsItem = db.NewsItems.Find(id);
+            if (newsItem == null)
             {
                 return HttpNotFound();
             }
-            return View(movie);
+            return View(newsItem);
         }
 
         //
@@ -106,8 +106,8 @@ namespace btDotNet.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            Movie movie = db.Movies.Find(id);
-            db.Movies.Remove(movie);
+            NewsItem newsItem = db.NewsItems.Find(id);
+            db.NewsItems.Remove(newsItem);
             db.SaveChanges();
             return RedirectToAction("Index");
         }

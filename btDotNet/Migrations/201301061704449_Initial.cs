@@ -8,19 +8,19 @@ namespace btDotNet.Migrations
         public override void Up()
         {
             CreateTable(
-                "dbo.Movies",
+                "dbo.NewsItems",
                 c => new
                     {
-                        MovieId = c.Int(nullable: false, identity: true),
-                        Name = c.String(),
+                        NewsItemId = c.Int(nullable: false, identity: true),
+                        Title = c.String(),
                     })
-                .PrimaryKey(t => t.MovieId);
+                .PrimaryKey(t => t.NewsItemId);
             
         }
         
         public override void Down()
         {
-            DropTable("dbo.Movies");
+            DropTable("dbo.NewsItems");
         }
     }
 }

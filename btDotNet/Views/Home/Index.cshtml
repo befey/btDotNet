@@ -1,4 +1,4 @@
-﻿@model IEnumerable<btDotNet.Models.Movie>
+﻿@model IEnumerable<btDotNet.Models.NewsItem>
 
 @{
     ViewBag.Title = "Index";
@@ -12,7 +12,7 @@
 <table>
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.Name)
+            @Html.DisplayNameFor(model => model.Title)
         </th>
         <th></th>
     </tr>
@@ -20,12 +20,12 @@
 @foreach (var item in Model) {
     <tr>
         <td>
-            @Html.DisplayFor(modelItem => item.Name)
+            @Html.DisplayFor(modelItem => item.Title)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.MovieId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.MovieId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.MovieId })
+            @Html.ActionLink("Edit", "Edit", new { id=item.NewsItemId }) |
+            @Html.ActionLink("Details", "Details", new { id=item.NewsItemId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.NewsItemId })
         </td>
     </tr>
 }
