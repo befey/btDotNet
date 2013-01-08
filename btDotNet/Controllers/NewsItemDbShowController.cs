@@ -23,7 +23,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // GET: /Home/Details/5
+        // GET: /NewsItemDbShow/Details/5
 
         public ActionResult Details(int id = 0)
         {
@@ -36,7 +36,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // GET: /Home/Create
+        // GET: /NewsItemDbShow/Create
 
         public ActionResult Create()
         {
@@ -44,7 +44,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // POST: /Home/Create
+        // POST: /NewsItemDbShow/Create
 
         [HttpPost]
         public ActionResult Create(NewsItem newsItem)
@@ -60,7 +60,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // GET: /Home/Edit/5
+        // GET: /NewsItemDbShow/Edit/5
 
         public ActionResult Edit(int id = 0)
         {
@@ -73,7 +73,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // POST: /Home/Edit/5
+        // POST: /NewsItemDbShow/Edit/5
 
         [HttpPost]
         public ActionResult Edit(NewsItem newsItem)
@@ -88,7 +88,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // GET: /Home/Delete/5
+        // GET: /NewsItemDbShow/Delete/5
 
         public ActionResult Delete(int id = 0)
         {
@@ -101,7 +101,7 @@ namespace btDotNet.Controllers
         }
 
         //
-        // POST: /Home/Delete/5
+        // POST: /NewsItemDbShow/Delete/5
 
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
@@ -116,6 +116,14 @@ namespace btDotNet.Controllers
         {
             db.Dispose();
             base.Dispose(disposing);
+        }
+
+        public ActionResult Refresh()
+        {
+            var locationManager = new NewsItemLocationManager();
+            //locationManager.AddLocation(new NewsItemLocation(@"TestJsonData.json"));
+            db.RefreshNewsItems(locationManager);
+            return RedirectToAction("Index");
         }
     }
 }

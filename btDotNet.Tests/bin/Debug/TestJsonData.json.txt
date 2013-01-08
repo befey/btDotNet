@@ -1,0 +1,263 @@
+{
+   "responseData":{
+      "results":[
+         {
+            "GsearchResultClass":"GnewsSearch",
+            "clusterUrl":"http://news.google.com/news/story?ncl\u003ddoV66WDgexHvnYM7f7q5XWx13-l1M\u0026hl\u003den\u0026ned\u003dus",
+            "content":"President \u003cb\u003eBarack Obama\u003c/b\u003e and his choice for Defense Secretary, former Nebraska Sen. Chuck Hagel, left, listen as he choice for new CIA Director, current Deputy National Security Adviser for Homeland Security and Counterterrorism, John Brennan, speaks.",
+            "unescapedUrl":"http://abcnews.go.com/Politics/OTUS/president-obama-taps-chuck-hagel-defense-secretary-girds/story?id\u003d18147109",
+            "url":"http%3A%2F%2Fabcnews.go.com%2FPolitics%2FOTUS%2Fpresident-obama-taps-chuck-hagel-defense-secretary-girds%2Fstory%3Fid%3D18147109",
+            "title":"\u003cb\u003eObama\u003c/b\u003e Taps \u0026#39;Patriot\u0026#39; Hagel for Defense",
+            "titleNoFormatting":"Obama Taps \u0026#39;Patriot\u0026#39; Hagel for Defense",
+            "location":"",
+            "publisher":"ABC News",
+            "publishedDate":"Mon, 07 Jan 2013 03:04:13 -0800",
+            "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-6\u0026fd\u003dS\u0026url\u003dhttp://abcnews.go.com/Politics/OTUS/president-obama-taps-chuck-hagel-defense-secretary-girds/story%3Fid%3D18147109\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHbTixfreHMTddjusqsgg84UhVYOQ",
+            "language":"en",
+            "image":{
+               "url":"http://a.abcnews.com/images/Politics/ap_hagel_obama_mi_130107_wg.jpg",
+               "tbUrl":"http://nt0.ggpht.com/news/tbn/yENaPgLpYzoJ",
+               "originalContextUrl":"http://abcnews.go.com/Politics/OTUS/president-obama-taps-chuck-hagel-defense-secretary-girds/story?id\u003d18147109",
+               "publisher":"ABC News",
+               "tbWidth":80,
+               "tbHeight":45
+            },
+            "relatedStories":[
+               {
+                  "unescapedUrl":"http://forward.com/articles/168915/",
+                  "url":"http%3A%2F%2Fforward.com%2Farticles%2F168915%2F",
+                  "title":"No More Mr. Nice Guy for \u003cb\u003eBarack Obama\u003c/b\u003e",
+                  "titleNoFormatting":"No More Mr. Nice Guy for Barack Obama",
+                  "location":"",
+                  "publisher":"Forward",
+                  "publishedDate":"Tue, 08 Jan 2013 04:40:42 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-5\u0026fd\u003dS\u0026url\u003dhttp://forward.com/articles/168915/\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNEUhCNtyDvppqaUspA19vLQ_Koj0A",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.politico.com/story/2013/01/why-barack-obama-picked-chuck-hagel-85822.html",
+                  "url":"http%3A%2F%2Fwww.politico.com%2Fstory%2F2013%2F01%2Fwhy-barack-obama-picked-chuck-hagel-85822.html",
+                  "title":"Why \u003cb\u003ePresident Obama\u003c/b\u003e picked Chuck Hagel",
+                  "titleNoFormatting":"Why President Obama picked Chuck Hagel",
+                  "location":"",
+                  "publisher":"Politico",
+                  "publishedDate":"Mon, 07 Jan 2013 01:44:14 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-4\u0026fd\u003dS\u0026url\u003dhttp://www.politico.com/story/2013/01/why-barack-obama-picked-chuck-hagel-85822.html\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNEOx0085uJ2K5SpRU_nIwfeSs8fYQ",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.telegraph.co.uk/news/worldnews/barackobama/9786434/John-Brennan-chosen-by-Barack-Obama-as-new-CIA-head.html",
+                  "url":"http%3A%2F%2Fwww.telegraph.co.uk%2Fnews%2Fworldnews%2Fbarackobama%2F9786434%2FJohn-Brennan-chosen-by-Barack-Obama-as-new-CIA-head.html",
+                  "title":"John Brennan chosen by \u003cb\u003eBarack Obama\u003c/b\u003e as new CIA head",
+                  "titleNoFormatting":"John Brennan chosen by Barack Obama as new CIA head",
+                  "location":"",
+                  "publisher":"Telegraph.co.uk",
+                  "publishedDate":"Mon, 07 Jan 2013 12:27:05 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-3\u0026fd\u003dS\u0026url\u003dhttp://www.telegraph.co.uk/news/worldnews/barackobama/9786434/John-Brennan-chosen-by-Barack-Obama-as-new-CIA-head.html\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNElBmHdjaFXL_zlG7bEivB6B4JUzA",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.independent.co.uk/news/world/americas/all-the-presidents-men-barack-obama-names-his-national-security-team-8443315.html",
+                  "url":"http%3A%2F%2Fwww.independent.co.uk%2Fnews%2Fworld%2Famericas%2Fall-the-presidents-men-barack-obama-names-his-national-security-team-8443315.html",
+                  "title":"All the President\u0026#39;s men: \u003cb\u003eBarack Obama\u003c/b\u003e names his national security team",
+                  "titleNoFormatting":"All the President\u0026#39;s men: Barack Obama names his national security team",
+                  "location":"",
+                  "publisher":"The Independent",
+                  "publishedDate":"Tue, 08 Jan 2013 11:59:18 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-2\u0026fd\u003dS\u0026url\u003dhttp://www.independent.co.uk/news/world/americas/all-the-presidents-men-barack-obama-names-his-national-security-team-8443315.html\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHsqp3zzCxzJZOujMSL8F4zal9k9g",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://nbcpolitics.nbcnews.com/_news/2013/01/07/16396436-obama-taps-american-patriot-hagel-for-pentagon-job?lite",
+                  "url":"http%3A%2F%2Fnbcpolitics.nbcnews.com%2F_news%2F2013%2F01%2F07%2F16396436-obama-taps-american-patriot-hagel-for-pentagon-job%3Flite",
+                  "title":"\u003cb\u003eObama\u003c/b\u003e taps \u0026#39;American patriot\u0026#39; Hagel for Pentagon job",
+                  "titleNoFormatting":"Obama taps \u0026#39;American patriot\u0026#39; Hagel for Pentagon job",
+                  "location":"",
+                  "publisher":"NBCNews.com (blog)",
+                  "publishedDate":"Mon, 07 Jan 2013 10:54:05 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-1\u0026fd\u003dS\u0026url\u003dhttp://nbcpolitics.nbcnews.com/_news/2013/01/07/16396436-obama-taps-american-patriot-hagel-for-pentagon-job%3Flite\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHvZ07F6--h2VdZS1EueN9rDFRE0w",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.ndtv.com/article/world/barack-obama-s-defense-pick-faces-rough-going-in-senate-314846",
+                  "url":"http%3A%2F%2Fwww.ndtv.com%2Farticle%2Fworld%2Fbarack-obama-s-defense-pick-faces-rough-going-in-senate-314846",
+                  "title":"\u003cb\u003eBarack Obama\u0026#39;s\u003c/b\u003e defense pick faces rough going in Senate",
+                  "titleNoFormatting":"Barack Obama\u0026#39;s defense pick faces rough going in Senate",
+                  "location":"",
+                  "publisher":"NDTV",
+                  "publishedDate":"Tue, 08 Jan 2013 06:51:45 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-0-0\u0026fd\u003dS\u0026url\u003dhttp://www.ndtv.com/article/world/barack-obama-s-defense-pick-faces-rough-going-in-senate-314846\u0026cid\u003d52778052674176\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNH3ppDFf-RuijaIFygRoqUXhsvatQ",
+                  "language":"en"
+               }
+            ]
+         },
+         {
+            "GsearchResultClass":"GnewsSearch",
+            "clusterUrl":"",
+            "content":"I didn\u0026#39;t vote for \u003cb\u003eBarack Obama\u003c/b\u003e last November. I didn\u0026#39;t vote for him in 2008, either. And I can prove it. No, nobody violated the sanctity of a voting booth. I can prove it because I didn\u0026#39;t vote at all those years. In fact, I haven\u0026#39;t voted in any \u003cb\u003e...\u003c/b\u003e",
+            "unescapedUrl":"http://news.yahoo.com/why-i-never-voted-for-barack-obama-100046026.html",
+            "url":"http%3A%2F%2Fnews.yahoo.com%2Fwhy-i-never-voted-for-barack-obama-100046026.html",
+            "title":"Why I never voted for \u003cb\u003eBarack Obama\u003c/b\u003e",
+            "titleNoFormatting":"Why I never voted for Barack Obama",
+            "location":"",
+            "publisher":"Yahoo! News (blog)",
+            "publishedDate":"Tue, 08 Jan 2013 02:12:52 -0800",
+            "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-1-0\u0026fd\u003dS\u0026url\u003dhttp://news.yahoo.com/why-i-never-voted-for-barack-obama-100046026.html\u0026cid\u003d0\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHxDi_LomYHjm_buRO4jQL39cm4aw",
+            "language":"en"
+         },
+         {
+            "GsearchResultClass":"GnewsSearch",
+            "clusterUrl":"http://news.google.com/news/story?ncl\u003dd1mN27H-J0RYOEM4_BU27fetDe0wM\u0026hl\u003den\u0026ned\u003dus",
+            "content":"\u003cb\u003eBarack Obama\u003c/b\u003e to host Hamid Karzai for Afghanistan talks at White House. US President \u003cb\u003eBarack Obama\u003c/b\u003e will host Afghan President Hamid Karzai at the White House on Friday for talks centered on the long-term security compact between the two countries.",
+            "unescapedUrl":"http://www.telegraph.co.uk/news/worldnews/northamerica/usa/9786864/Barack-Obama-to-host-Hamid-Karzai-for-Afghanistan-talks-at-White-House.html",
+            "url":"http%3A%2F%2Fwww.telegraph.co.uk%2Fnews%2Fworldnews%2Fnorthamerica%2Fusa%2F9786864%2FBarack-Obama-to-host-Hamid-Karzai-for-Afghanistan-talks-at-White-House.html",
+            "title":"\u003cb\u003eBarack Obama\u003c/b\u003e to host Hamid Karzai for Afghanistan talks at White House",
+            "titleNoFormatting":"Barack Obama to host Hamid Karzai for Afghanistan talks at White House",
+            "location":"",
+            "publisher":"Telegraph.co.uk",
+            "publishedDate":"Mon, 07 Jan 2013 17:11:00 -0800",
+            "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-6\u0026fd\u003dS\u0026url\u003dhttp://www.telegraph.co.uk/news/worldnews/northamerica/usa/9786864/Barack-Obama-to-host-Hamid-Karzai-for-Afghanistan-talks-at-White-House.html\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNEaO53QBgYAYCT0h5Lg0GLFlnZtaw",
+            "language":"en",
+            "image":{
+               "url":"http://i.telegraph.co.uk/multimedia/archive/02423/Karzai_2423764b.jpg",
+               "tbUrl":"http://nt1.ggpht.com/news/tbn/FXQCfURVDpcJ",
+               "originalContextUrl":"http://www.telegraph.co.uk/news/worldnews/northamerica/usa/9786864/Barack-Obama-to-host-Hamid-Karzai-for-Afghanistan-talks-at-White-House.html",
+               "publisher":"Telegraph.co.uk",
+               "tbWidth":80,
+               "tbHeight":50
+            },
+            "relatedStories":[
+               {
+                  "unescapedUrl":"http://news.yahoo.com/obama-meet-afghan-president-karzai-friday-white-house-001837822--business.html",
+                  "url":"http%3A%2F%2Fnews.yahoo.com%2Fobama-meet-afghan-president-karzai-friday-white-house-001837822--business.html",
+                  "title":"\u003cb\u003eObama\u003c/b\u003e to meet Afghan \u003cb\u003ePresident\u003c/b\u003e Karzai on Friday: White House",
+                  "titleNoFormatting":"Obama to meet Afghan President Karzai on Friday: White House",
+                  "location":"",
+                  "publisher":"Yahoo! News (blog)",
+                  "publishedDate":"Mon, 07 Jan 2013 16:22:01 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-5\u0026fd\u003dS\u0026url\u003dhttp://news.yahoo.com/obama-meet-afghan-president-karzai-friday-white-house-001837822--business.html\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNG0RluczaWYp4MZ2d9Bc3ElxK5Okg",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.indianexpress.com/news/as-barack-obama-hamid-karzai-meet-afghan-peace-efforts-show-flickers-of-life/1056250/",
+                  "url":"http%3A%2F%2Fwww.indianexpress.com%2Fnews%2Fas-barack-obama-hamid-karzai-meet-afghan-peace-efforts-show-flickers-of-life%2F1056250%2F",
+                  "title":"As \u003cb\u003eBarack Obama\u003c/b\u003e, Hamid Karzai meet, Afghan peace efforts show flickers of life",
+                  "titleNoFormatting":"As Barack Obama, Hamid Karzai meet, Afghan peace efforts show flickers of life",
+                  "location":"",
+                  "publisher":"Indian Express",
+                  "publishedDate":"Mon, 07 Jan 2013 23:05:03 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-4\u0026fd\u003dS\u0026url\u003dhttp://www.indianexpress.com/news/as-barack-obama-hamid-karzai-meet-afghan-peace-efforts-show-flickers-of-life/1056250/\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHFFfW2TgzF10nWkvHEPCsWcC2jGg",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.ibtimes.com/obama-meet-karzai-size-residual-us-troops-afghanistan-under-discussion-999298",
+                  "url":"http%3A%2F%2Fwww.ibtimes.com%2Fobama-meet-karzai-size-residual-us-troops-afghanistan-under-discussion-999298",
+                  "title":"\u003cb\u003eObama\u003c/b\u003e To Meet Karzai As Size Of \u0026#39;Residual\u0026#39; US Troops In Afghanistan Under \u003cb\u003e...\u003c/b\u003e",
+                  "titleNoFormatting":"Obama To Meet Karzai As Size Of \u0026#39;Residual\u0026#39; US Troops In Afghanistan Under ...",
+                  "location":"",
+                  "publisher":"International Business Times",
+                  "publishedDate":"Tue, 08 Jan 2013 01:39:59 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-3\u0026fd\u003dS\u0026url\u003dhttp://www.ibtimes.com/obama-meet-karzai-size-residual-us-troops-afghanistan-under-discussion-999298\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHmIWuEz5BZ_vWu2CZzMoInzd5ErA",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.ndtv.com/article/world/barack-obama-to-host-afghan-president-on-friday-at-white-house-314483",
+                  "url":"http%3A%2F%2Fwww.ndtv.com%2Farticle%2Fworld%2Fbarack-obama-to-host-afghan-president-on-friday-at-white-house-314483",
+                  "title":"\u003cb\u003eBarack Obama\u003c/b\u003e to host Afghan president on Friday at White House",
+                  "titleNoFormatting":"Barack Obama to host Afghan president on Friday at White House",
+                  "location":"",
+                  "publisher":"NDTV",
+                  "publishedDate":"Mon, 07 Jan 2013 18:27:32 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-2\u0026fd\u003dS\u0026url\u003dhttp://www.ndtv.com/article/world/barack-obama-to-host-afghan-president-on-friday-at-white-house-314483\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNHZbGpuQdotvs5kDchr519nx4nyyA",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.thehindu.com/news/international/obama-karzai-to-meet-in-washington-on-friday/article4286180.ece",
+                  "url":"http%3A%2F%2Fwww.thehindu.com%2Fnews%2Finternational%2Fobama-karzai-to-meet-in-washington-on-friday%2Farticle4286180.ece",
+                  "title":"\u003cb\u003eObama\u003c/b\u003e, Karzai to meet in Washington on Friday",
+                  "titleNoFormatting":"Obama, Karzai to meet in Washington on Friday",
+                  "location":"",
+                  "publisher":"The Hindu",
+                  "publishedDate":"Mon, 07 Jan 2013 21:52:42 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-1\u0026fd\u003dS\u0026url\u003dhttp://www.thehindu.com/news/international/obama-karzai-to-meet-in-washington-on-friday/article4286180.ece\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNFPgt7F6D5xluIg5O_O08zgtPtjfg",
+                  "language":"en"
+               },
+               {
+                  "unescapedUrl":"http://www.thehindubusinessline.com/news/international/obama-to-meet-afghan-president-karzai-on-friday/article4286062.ece",
+                  "url":"http%3A%2F%2Fwww.thehindubusinessline.com%2Fnews%2Finternational%2Fobama-to-meet-afghan-president-karzai-on-friday%2Farticle4286062.ece",
+                  "title":"\u003cb\u003eObama\u003c/b\u003e to meet Afghan \u003cb\u003ePresident\u003c/b\u003e Karzai on Friday",
+                  "titleNoFormatting":"Obama to meet Afghan President Karzai on Friday",
+                  "location":"",
+                  "publisher":"Hindu Business Line",
+                  "publishedDate":"Mon, 07 Jan 2013 20:31:39 -0800",
+                  "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-2-0\u0026fd\u003dS\u0026url\u003dhttp://www.thehindubusinessline.com/news/international/obama-to-meet-afghan-president-karzai-on-friday/article4286062.ece\u0026cid\u003d52778055636551\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNELfYfrWBoKqj10H45KcBdgFmgmHg",
+                  "language":"en"
+               }
+            ]
+         },
+         {
+            "GsearchResultClass":"GnewsSearch",
+            "clusterUrl":"",
+            "content":"\u003cb\u003ePresident Obama\u003c/b\u003e nominated longtime counterterrorism chief John Brennan to serve as director of the Central Intelligence Agency and Sen. Chuck Hagel for defense secretary. Council on Foreign Relations fellow Micah Zenko discusses what the nominations \u003cb\u003e...\u003c/b\u003e",
+            "unescapedUrl":"http://online.wsj.com/article/SB10001424127887323482504578227152762437278.html",
+            "url":"http%3A%2F%2Fonline.wsj.com%2Farticle%2FSB10001424127887323482504578227152762437278.html",
+            "title":"CIA Choice Is Trusted Adviser on Terror",
+            "titleNoFormatting":"CIA Choice Is Trusted Adviser on Terror",
+            "location":"",
+            "publisher":"Wall Street Journal",
+            "publishedDate":"Mon, 07 Jan 2013 03:25:43 -0800",
+            "signedRedirectUrl":"http://news.google.com/news/url?sa\u003dT\u0026ct\u003dus/0-3-0\u0026fd\u003dS\u0026url\u003dhttp://online.wsj.com/article/SB10001424127887323482504578227152762437278.html\u0026cid\u003d0\u0026ei\u003dwoPsUMC7Acz7lwfKcg\u0026usg\u003dAFQjCNF23e-7qkrN37rpu-58pf_74NKybQ",
+            "language":"en",
+            "image":{
+               "url":"http://si.wsj.net/public/resources/images/OB-VX079_0107ob_G_20130107161759.jpg",
+               "tbUrl":"http://nt2.ggpht.com/news/tbn/_pSdxjdCgHEJ",
+               "originalContextUrl":"http://online.wsj.com/article/SB10001424127887323482504578227152762437278.html",
+               "publisher":"Wall Street Journal",
+               "tbWidth":80,
+               "tbHeight":53
+            }
+         }
+      ],
+      "cursor":{
+         "pages":[
+            {
+               "start":"0",
+               "label":1
+            },
+            {
+               "start":"4",
+               "label":2
+            },
+            {
+               "start":"8",
+               "label":3
+            },
+            {
+               "start":"12",
+               "label":4
+            },
+            {
+               "start":"16",
+               "label":5
+            },
+            {
+               "start":"20",
+               "label":6
+            },
+            {
+               "start":"24",
+               "label":7
+            },
+            {
+               "start":"28",
+               "label":8
+            }
+         ],
+         "estimatedResultCount":"38935227",
+         "currentPageIndex":0,
+         "moreResultsUrl":"http://news.google.com/nwshp?oe\u003dutf8\u0026ie\u003dutf8\u0026source\u003duds\u0026q\u003dbarack+obama\u0026hl\u003den\u0026start\u003d0"
+      }
+   },
+   "responseDetails":null,
+   "responseStatus":200
+}

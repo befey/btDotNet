@@ -12,16 +12,27 @@ namespace btDotNet
         public static void RegisterRoutes(RouteCollection routes)
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
-            
-        /*    routes.MapRoute(
-                "NewsItemDb",
+
+            routes.MapRoute(
+                "NewsItemDbWithId",
+                "NewsItemDbShow/{action}/{id}",
+                new { controller = "NewsItemDbShow", action = "Index", id = UrlParameter.Optional },
+                new { id = @"\d+" }
+            );
+            routes.MapRoute(
+                "NewsItemDbWithNoId",
+                "NewsItemDbShow/{action}",
+                new { controller = "NewsItemDbShow", action = "Index" }
+            );
+            routes.MapRoute(
+                "NewsItemDbDefault",
                 "NewsItemDbShow",
                 new { controller = "NewsItemDbShow", action = "Index" }
             );
-        */    routes.MapRoute(
+            routes.MapRoute(
                 name: "Default",
-                url: "{controller}/{action}/{id}",
-                defaults: new { controller = "Home", action = "Index", id = UrlParameter.Optional }
+                url: "{controller}",
+                defaults: new { controller = "Home", action = "Index"}
             );
         }
     }

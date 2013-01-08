@@ -54,3 +54,7 @@ d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\bt
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\btDotNet.Migrations.Initial.resources
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\GenerateResource.read.1.tlog
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\GenerateResource.write.1.tlog
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\ServiceStack.Text.dll
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\ServiceStack.Text.xml
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\btDotNet.Properties.Resources.resources
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\Google.GData.Client.dll

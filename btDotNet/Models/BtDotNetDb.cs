@@ -1,9 +1,13 @@
 ﻿using System;
+using System.Net;
 using System.Collections.Generic;
+using System.IO;
 using System.Linq;
 using System.Data.Entity;
 using System.Data.Entity.Migrations;
 using System.Web;
+using ServiceStack.Text;
+using btDotNet.Controllers;
 
 namespace btDotNet.Models
 {
@@ -24,15 +28,15 @@ namespace btDotNet.Models
         {
 #if DEBUG
             // Create my debug (testing) objects here
-            NewsItem[] testNewsItems = {
-                new NewsItem { Title = "Alien" },
-                new NewsItem { Title = "Apocalypse Now" },
-                new NewsItem { Title = "Goodfellas" }
-            };
-            foreach (NewsItem m in testNewsItems)
-            {
-                context.NewsItems.Add(m);
-            }
+            //NewsItem[] testNewsItems = {
+            //    new NewsItem { Title = "Alien" },
+            //    new NewsItem { Title = "Apocalypse Now" },
+            //    new NewsItem { Title = "Goodfellas" }
+            //};
+            //foreach (NewsItem m in testNewsItems)
+            //{
+            //    context.NewsItems.Add(m);
+            //}
             
 #endif
 
@@ -68,6 +72,23 @@ namespace btDotNet.Models
 #else
             Database.SetInitializer<BtDotNetDb> (new DropCreateAlwaysInitializer());
 #endif
+        }
+
+        public void RefreshNewsItems(NewsItemLocationManager locationManager)
+        {
+            var url = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&q=barack%20obama";
+            var wc = new WebClient();
+            var rawFeedData = wc.DownloadString(url);
+        
+            var fromJson = JsonSerializer.DeserializeFromString<GoogleNewsSearchResultsWrapper>
+                (rawFeedData);
+            
+            //foreach (var item in fromJson)
+            //{
+            //    var temp = item;
+            //    //this.NewsItems.Add(item);
+            //}
+
         }
     }
 }
