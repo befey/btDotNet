@@ -11,7 +11,8 @@ namespace btDotNet.Controllers
 {
     public class HomeController : Controller
     {
-        //private BtDotNetDb db = new BtDotNetDb();
+        private BtDotNetDb _db = new BtDotNetDb();
+
 
         //
         // GET: /Home/
@@ -19,13 +20,14 @@ namespace btDotNet.Controllers
         public ActionResult Index()
         {
             ViewBag.Message = "The index has loaded.";
-            return View();
+
+            return View(_db.NewsItems.ToList());
         }
 
-/*        protected override void Dispose(bool disposing)
+        protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            _db.Dispose();
             base.Dispose(disposing);
         }
-*/    }
+    }
 }

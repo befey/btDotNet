@@ -1,7 +1,14 @@
-﻿
+﻿@model IEnumerable<btDotNet.Models.NewsItem>
 @{
     ViewBag.Title = "Index";
 }
+
+@section database_count {
+    <span class="database_count">
+        @Html.ActionLink(("Loaded " + Model.Count().ToString() + " items from the database"), "Index", "NewsItemDbShow")
+    </span>
+}
+
 
 <h2>@ViewBag.Title</h2>
 
@@ -10,7 +17,4 @@
 
 <div>
     @Html.ActionLink("Refresh NewsItemDb", "Refresh", "NewsItemDbShow")
-</div>
-<div>
-    @Html.ActionLink("View NewsItemDb", "Index", "NewsItemDbShow")
 </div>

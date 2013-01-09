@@ -4,30 +4,26 @@
     ViewBag.Title = "NewsItemDb Index";
 }
 
+@section database_count {
+    <span class="database_count">
+        @Html.ActionLink(("Loaded " + Model.Count().ToString() + " items from the database"), "Index", "NewsItemDbShow")
+    </span>
+}
+
+
 <h2>@ViewBag.Title</h2>
 
-<p>
-    @Html.ActionLink("Create New", "Create")
-</p>
 <table>
-    <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.Title)
-        </th>
-        <th></th>
-    </tr>
-
-@foreach (var item in Model) {
-    <tr>
-        <td>
-            @Html.DisplayFor(modelItem => item.Title)
-        </td>
-        <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.NewsItemId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.NewsItemId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.NewsItemId })
-        </td>
-    </tr>
-}
+    
+    @foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Title)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id=item.NewsItemId })
+            </td>
+        </tr>
+    }
 
 </table>

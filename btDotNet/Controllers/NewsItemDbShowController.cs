@@ -11,15 +11,15 @@ namespace btDotNet.Controllers
 {
     public class NewsItemDbShowController : Controller
     {
-        private BtDotNetDb db = new BtDotNetDb();
-
+        private BtDotNetDb _db = new BtDotNetDb();
+        
         //
         // GET: /NewsItemDbShow/
 
         public ActionResult Index()
         {
             ViewBag.Message = "The NewsItemDb index has loaded.";
-            return View(db.NewsItems.ToList());
+            return View(_db.NewsItems.ToList());
         }
 
         //
@@ -27,7 +27,7 @@ namespace btDotNet.Controllers
 
         public ActionResult Details(int id = 0)
         {
-            NewsItem newsItem = db.NewsItems.Find(id);
+            NewsItem newsItem = _db.NewsItems.Find(id);
             if (newsItem == null)
             {
                 return HttpNotFound();
@@ -51,8 +51,8 @@ namespace btDotNet.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.NewsItems.Add(newsItem);
-                db.SaveChanges();
+                _db.NewsItems.Add(newsItem);
+                _db.SaveChanges();
                 return RedirectToAction("Index");
             }
 
@@ -64,7 +64,7 @@ namespace btDotNet.Controllers
 
         public ActionResult Edit(int id = 0)
         {
-            NewsItem newsItem = db.NewsItems.Find(id);
+            NewsItem newsItem = _db.NewsItems.Find(id);
             if (newsItem == null)
             {
                 return HttpNotFound();
@@ -80,8 +80,8 @@ namespace btDotNet.Controllers
         {
             if (ModelState.IsValid)
             {
-                db.Entry(newsItem).State = EntityState.Modified;
-                db.SaveChanges();
+                _db.Entry(newsItem).State = EntityState.Modified;
+                _db.SaveChanges();
                 return RedirectToAction("Index");
             }
             return View(newsItem);
@@ -92,7 +92,7 @@ namespace btDotNet.Controllers
 
         public ActionResult Delete(int id = 0)
         {
-            NewsItem newsItem = db.NewsItems.Find(id);
+            NewsItem newsItem = _db.NewsItems.Find(id);
             if (newsItem == null)
             {
                 return HttpNotFound();
@@ -106,15 +106,15 @@ namespace btDotNet.Controllers
         [HttpPost, ActionName("Delete")]
         public ActionResult DeleteConfirmed(int id)
         {
-            NewsItem newsItem = db.NewsItems.Find(id);
-            db.NewsItems.Remove(newsItem);
-            db.SaveChanges();
+            NewsItem newsItem = _db.NewsItems.Find(id);
+            _db.NewsItems.Remove(newsItem);
+            _db.SaveChanges();
             return RedirectToAction("Index");
         }
 
         protected override void Dispose(bool disposing)
         {
-            db.Dispose();
+            _db.Dispose();
             base.Dispose(disposing);
         }
 
@@ -122,7 +122,7 @@ namespace btDotNet.Controllers
         {
             var locationManager = new NewsItemLocationManager();
             //locationManager.AddLocation(new NewsItemLocation(@"TestJsonData.json"));
-            db.RefreshNewsItems(locationManager);
+            _db.RefreshNewsItems(locationManager);
             return RedirectToAction("Index");
         }
     }

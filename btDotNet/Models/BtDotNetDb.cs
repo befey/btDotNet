@@ -46,7 +46,7 @@ namespace btDotNet.Models
             context.SaveChanges();
         }
 
-        public class DropCreateAlwaysInitializer : DropCreateDatabaseAlways<BtDotNetDb>
+        public class DropCreateAlwaysInitializer : DropCreateDatabaseIfModelChanges<BtDotNetDb>
         {
             protected override void Seed(BtDotNetDb context)
             {
@@ -71,7 +71,7 @@ namespace btDotNet.Models
 #if DEBUG
             Database.SetInitializer<BtDotNetDb> (new DropCreateAlwaysInitializer());
 #else
-            Database.SetInitializer<BtDotNetDb> (new DropCreateAlwaysInitializer());
+            Database.SetInitializer<BtDotNetDb> (new CreateInitializer());
 #endif
         }
 
