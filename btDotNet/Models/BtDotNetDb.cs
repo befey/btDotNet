@@ -75,7 +75,7 @@ namespace btDotNet.Models
 #endif
         }
 
-        public void RefreshNewsItems(NewsItemLocationManager locationManager)
+        public void RefreshNewsItems(ILocationManager locationManager)
         {
             foreach (NewsItem item in NewsItems)
             {

@@ -338,10 +338,7 @@
   <ItemGroup>
     <None Include="Properties\PublishProfiles\btdotnet - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\btdotnet - Web Deploy.pubxml" />
-    <Content Include="Views\NewsItemDbShow\Create.cshtml" />
-    <Content Include="Views\NewsItemDbShow\Delete.cshtml" />
     <Content Include="Views\NewsItemDbShow\Details.cshtml" />
-    <Content Include="Views\NewsItemDbShow\Edit.cshtml" />
     <Content Include="Views\NewsItemDbShow\Index.cshtml" />
   </ItemGroup>
   <PropertyGroup>
@@ -360,7 +357,7 @@
         <WebProjectProperties>
           <UseIIS>False</UseIIS>
           <AutoAssignPort>True</AutoAssignPort>
-          <DevelopmentServerPort>16245</DevelopmentServerPort>
+          <DevelopmentServerPort>26389</DevelopmentServerPort>
           <DevelopmentServerVPath>/</DevelopmentServerVPath>
           <IISUrl>
           </IISUrl>

@@ -14,9 +14,9 @@ namespace btDotNet
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "NewsItemDbWithId",
-                "NewsItemDbShow/{action}/{id}",
-                new { controller = "NewsItemDbShow", action = "Index", id = UrlParameter.Optional },
+                "NewsItemDbDetailsWithId",
+                "NewsItemDbShow/Details/{id}",
+                new { controller = "NewsItemDbShow", action="Details", id = UrlParameter.Optional},
                 new { id = @"\d+" }
             );
             routes.MapRoute(
