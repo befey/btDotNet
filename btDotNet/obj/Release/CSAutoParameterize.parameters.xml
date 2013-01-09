@@ -3,4 +3,7 @@
   <parameter name="BtDotNetDb-Web.config Connection String" description="BtDotNetDb Connection String used in web.config by the application to access the database." defaultValue="data source=tcp:wufeezpnb7.database.windows.net,1433;&#xD;&#xA;             Initial Catalog=BtDotNetDb; User ID=btdnadmin@wufeezpnb7;&#xD;&#xA;             Password=Btdna54$;Encrypt=true;Trusted_Connection=false;&#xD;&#xA;             MultipleActiveResultSets=True" tags="SqlConnectionString">
     <parameterEntry kind="XmlFile" scope="d:\\brian\\my\ documents\\visual\ studio\ 2010\\Projects\\btDotNet\\btDotNet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='BtDotNetDb']/@connectionString" />
   </parameter>
+  <parameter name="Query-Web.config Connection String" description="Query Connection String used in web.config by the application to access the database." defaultValue="Data Source=.\SQLEXPRESS; Initial Catalog=Query-20130109130505; Integrated Security=True; MultipleActiveResultSets=True" tags="SqlConnectionString">
+    <parameterEntry kind="XmlFile" scope="d:\\brian\\my\ documents\\visual\ studio\ 2010\\Projects\\btDotNet\\btDotNet\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='Query']/@connectionString" />
+  </parameter>
 </parameters>

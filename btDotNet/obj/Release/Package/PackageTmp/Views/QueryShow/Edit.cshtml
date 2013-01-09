@@ -1,25 +1,23 @@
-﻿@model btDotNet.Models.NewsItem
+﻿@model btDotNet.Models.Query
 
 @{
-    ViewBag.Title = "Edit";
+    ViewBag.Title = "Edit Query";
 }
-
-<h2>Edit</h2>
 
 @using (Html.BeginForm()) {
     @Html.ValidationSummary(true)
 
     <fieldset>
-        <legend>NewsItem</legend>
+        <legend>Query</legend>
 
-        @Html.HiddenFor(model => model.NewsItemId)
+        @Html.HiddenFor(model => model.QueryId)
 
         <div class="editor-label">
-            @Html.LabelFor(model => model.Title)
+            @Html.LabelFor(model => model.QueryString)
         </div>
         <div class="editor-field">
-            @Html.EditorFor(model => model.Title)
-            @Html.ValidationMessageFor(model => model.Title)
+            @Html.EditorFor(model => model.QueryString)
+            @Html.ValidationMessageFor(model => model.QueryString)
         </div>
 
         <p>

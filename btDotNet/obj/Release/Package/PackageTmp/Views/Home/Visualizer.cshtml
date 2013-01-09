@@ -1,0 +1,27 @@
+﻿@using btDotNet.Models
+@model IEnumerable<btDotNet.Models.NewsItem>
+
+<script type="text/javascript">
+    $(".visualizer-zone>div").each(function (i, div) {
+        $(div).css({
+            position: "relative",
+            left: ($(div).parent().width() / 2) - ($(div).width() / 2),
+            top: ($(div).parent().height() / 2) - ($(div).height() / 2)
+        });
+    });
+</script>
+
+<div class="visualizer-zone">
+    <div>
+        @if(ViewData["tokens"] != null)
+            {
+                TokenCounter tkCtr = (TokenCounter)ViewData["tokens"];
+                int maxValue = tkCtr.First().Value;
+                
+                foreach (var item in tkCtr)
+                {
+                    <span style="font-size:@(item.Value*.25);opacity:@(1-((maxValue/item.Value)*.015));">@item.Key</span>
+                }  
+            }
+    </div>
+</div>

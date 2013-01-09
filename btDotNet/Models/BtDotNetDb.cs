@@ -87,21 +87,26 @@ namespace btDotNet.Models
 
             ClearDb(NewsItems);
 
+            RetrieveResultsForManagedLocations(manager);
+        }
+
+        private void RetrieveResultsForManagedLocations(ILocationManager manager)
+        {
             var wc = new WebClient();
 
             foreach (KeyValuePair<string, NewsItemLocation> item in manager)
             {
                 int maxRequests = 8;
                 int itemsPerPage = 8;
-                for (Int32 i = 0; i<maxRequests; i++)
+                for (Int32 i = 0; i < maxRequests; i++)
                 {
                     var rawFeedData = wc.DownloadString(
-                        item.Value.Location+"&start="+i*itemsPerPage);
+                        item.Value.Location + "&start=" + i*itemsPerPage);
                     var fromJson = JsonSerializer.DeserializeFromString<GoogleNewsSearchResultsWrapper>
                         (rawFeedData);
                     foreach (var result in fromJson.responseData.results)
                     {
-                        NewsItems.Add(new NewsItem { Title = HttpUtility.HtmlDecode(result.titleNoFormatting) });
+                        NewsItems.Add(new NewsItem(result));
                     }
                 }
             }

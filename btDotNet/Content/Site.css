@@ -113,6 +113,17 @@ h5, h6 {
     .featured + .main-content {
         background: url("../Images/heroAccent.png") no-repeat;
     }
+    
+    .visualizer-zone {
+        text-align: center;
+        horiz-align: center;
+        border: 10px solid silver;
+        overflow: hidden;
+    }
+    .visualizer-zone div
+    {
+        horiz-align: center;
+    }
 
 header .content-wrapper {
     padding-top: 20px; 

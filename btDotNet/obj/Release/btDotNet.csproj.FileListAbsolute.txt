@@ -61,3 +61,4 @@ d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgil
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.xml
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\ServiceStack.Text.xml
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Release\btDotNet.Properties.Resources.resources
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Release\btDotNet.Migrations.AddQuery.resources

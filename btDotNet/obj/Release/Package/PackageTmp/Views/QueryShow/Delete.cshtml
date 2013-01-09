@@ -1,4 +1,4 @@
-﻿@model btDotNet.Models.NewsItem
+﻿@model btDotNet.Models.Query
 
 @{
     ViewBag.Title = "Delete";
@@ -8,13 +8,13 @@
 
 <h3>Are you sure you want to delete this?</h3>
 <fieldset>
-    <legend>NewsItem</legend>
+    <legend>Query</legend>
 
     <div class="display-label">
-         @Html.DisplayNameFor(model => model.Title)
+         @Html.DisplayNameFor(model => model.QueryString)
     </div>
     <div class="display-field">
-        @Html.DisplayFor(model => model.Title)
+        @Html.DisplayFor(model => model.QueryString)
     </div>
 </fieldset>
 @using (Html.BeginForm()) {

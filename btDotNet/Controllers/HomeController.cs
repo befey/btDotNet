@@ -20,6 +20,15 @@ namespace btDotNet.Controllers
         {
             ViewBag.Message = "The index has loaded.";
 
+            TokenCounter tkCtr = null;
+            if (_db.NewsItems.Any())
+            {
+                tkCtr = new TokenCounter(_db.NewsItems);
+            }
+            if (tkCtr != null)
+            {
+                ViewData["tokens"] = tkCtr;
+            }
             return View(_db.NewsItems.ToList());
         }
 

@@ -61,3 +61,4 @@ d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\Google.G
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.dll
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.pdb
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.xml
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\btDotNet.Migrations.AddQuery.resources
