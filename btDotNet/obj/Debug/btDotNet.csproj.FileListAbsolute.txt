@@ -58,3 +58,6 @@ d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\ServiceS
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\ServiceStack.Text.xml
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\obj\Debug\btDotNet.Properties.Resources.resources
 d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\Google.GData.Client.dll
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.dll
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.pdb
+d:\brian\my documents\visual studio 2010\Projects\btDotNet\btDotNet\bin\HtmlAgilityPack.xml

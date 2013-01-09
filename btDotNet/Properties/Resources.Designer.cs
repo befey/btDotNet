@@ -59,14 +59,5 @@ namespace btDotNet.Properties {
                 resourceCulture = value;
             }
         }
-        
-        /// <summary>
-        ///   Looks up a localized string similar to {&quot;responseData&quot;: {&quot;feed&quot;:{&quot;feedUrl&quot;:&quot;http://news.google.com/news?output\u003drss&quot;,&quot;title&quot;:&quot;Top Stories - Google News&quot;,&quot;link&quot;:&quot;http://news.google.com/news?pz\u003d1\u0026amp;ned\u003dus\u0026amp;hl\u003den&quot;,&quot;author&quot;:&quot;&quot;,&quot;description&quot;:&quot;Google News&quot;,&quot;type&quot;:&quot;rss20&quot;,&quot;entries&quot;:[{&quot;title&quot;:&quot;GOP Sen. Graham suggests holding Brennan nomination - USA TODAY&quot;,&quot;link&quot;:&quot;http://news.google.com/news/url?sa\u003dt\u0026fd\u003dR\u0026usg\u003dAFQjCNHzzCbVWZK_wxvfBaJwfplPioWNgw\u0026url\u003dhttp://www.usatoday.com/story/theoval [rest of string was truncated]&quot;;.
-        /// </summary>
-        internal static string TestJsonData_json {
-            get {
-                return ResourceManager.GetString("TestJsonData_json", resourceCulture);
-            }
-        }
     }
 }

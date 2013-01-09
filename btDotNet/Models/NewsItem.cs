@@ -8,6 +8,6 @@ namespace btDotNet.Models
     public class NewsItem
     {
         public int NewsItemId { get; set; }
-        public String title { get; set; }
+        public String Title { get; set; }
     }
 }

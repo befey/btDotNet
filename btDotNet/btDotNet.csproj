@@ -49,6 +49,9 @@
     <Reference Include="Google.GData.Client">
       <HintPath>..\packages\Google.GData.Client.2.1.0.0\lib\Google.GData.Client.dll</HintPath>
     </Reference>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\packages\HtmlAgilityPack.1.4.6\lib\Net40\HtmlAgilityPack.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="ServiceStack.Text">
       <HintPath>..\packages\ServiceStack.Text.3.9.33\lib\net35\ServiceStack.Text.dll</HintPath>
