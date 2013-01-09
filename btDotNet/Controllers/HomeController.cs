@@ -13,7 +13,6 @@ namespace btDotNet.Controllers
     {
         private BtDotNetDb _db = new BtDotNetDb();
 
-
         //
         // GET: /Home/
 

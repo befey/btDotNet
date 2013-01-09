@@ -1,0 +1,22 @@
+﻿@model btDotNet.Models.Query
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<fieldset>
+    <legend>Query</legend>
+
+    <div class="display-label">
+         @Html.DisplayNameFor(model => model.QueryString)
+    </div>
+    <div class="display-field">
+        @Html.DisplayFor(model => model.QueryString)
+    </div>
+</fieldset>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id=Model.QueryId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

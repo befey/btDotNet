@@ -15,6 +15,7 @@ namespace btDotNet.Models
     public class BtDotNetDb : DbContext
     {
         public DbSet<NewsItem> NewsItems { get; set; }
+        public DbSet<Query> Queries { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -75,31 +76,45 @@ namespace btDotNet.Models
 #endif
         }
 
-        public void RefreshNewsItems(ILocationManager locationManager)
+        public void RefreshNewsItems()
         {
-            foreach (NewsItem item in NewsItems)
+            var locations = new Dictionary<string,NewsItemLocation>(Queries.Count());
+            foreach (var q in Queries)
             {
-                NewsItems.Remove(item);
+                locations.Add(q.QueryString, new NewsItemLocation(q));
             }
-            SaveChanges();
+            ILocationManager manager= new NewsItemLocationManager(locations);
 
-            var queryString = "Barack Obama";
-            for (Int32 i = 0; i<8; i++)
+            ClearDb(NewsItems);
+
+            var wc = new WebClient();
+
+            foreach (KeyValuePair<string, NewsItemLocation> item in manager)
             {
-                var url = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=8&start=" + i*8 + "&q=" + queryString;
-                var wc = new WebClient();
-                //var rawFeedData = HttpUtility.HtmlDecode(wc.DownloadString(url));
-                var rawFeedData = wc.DownloadString(url);
-
-                var fromJson = JsonSerializer.DeserializeFromString<GoogleNewsSearchResultsWrapper>
-                    (rawFeedData);
-
-                foreach (var result in fromJson.responseData.results)
+                int maxRequests = 8;
+                int itemsPerPage = 8;
+                for (Int32 i = 0; i<maxRequests; i++)
                 {
-                    NewsItems.Add(new NewsItem { Title = HttpUtility.HtmlDecode(result.titleNoFormatting) });
+                    var rawFeedData = wc.DownloadString(
+                        item.Value.Location+"&start="+i*itemsPerPage);
+                    var fromJson = JsonSerializer.DeserializeFromString<GoogleNewsSearchResultsWrapper>
+                        (rawFeedData);
+                    foreach (var result in fromJson.responseData.results)
+                    {
+                        NewsItems.Add(new NewsItem { Title = HttpUtility.HtmlDecode(result.titleNoFormatting) });
+                    }
                 }
             }
-            
+
+            SaveChanges();
+        }
+
+        private void ClearDb(DbSet dbToClear)
+        {
+            foreach (var item in dbToClear)
+            {
+                dbToClear.Remove(item);
+            }
             SaveChanges();
         }
     }

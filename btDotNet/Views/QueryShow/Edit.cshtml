@@ -1,0 +1,35 @@
+﻿@model btDotNet.Models.Query
+
+@{
+    ViewBag.Title = "Edit Query";
+}
+
+@using (Html.BeginForm()) {
+    @Html.ValidationSummary(true)
+
+    <fieldset>
+        <legend>Query</legend>
+
+        @Html.HiddenFor(model => model.QueryId)
+
+        <div class="editor-label">
+            @Html.LabelFor(model => model.QueryString)
+        </div>
+        <div class="editor-field">
+            @Html.EditorFor(model => model.QueryString)
+            @Html.ValidationMessageFor(model => model.QueryString)
+        </div>
+
+        <p>
+            <input type="submit" value="Save" />
+        </p>
+    </fieldset>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

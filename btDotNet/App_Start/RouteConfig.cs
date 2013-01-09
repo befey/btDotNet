@@ -14,20 +14,15 @@ namespace btDotNet
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
 
             routes.MapRoute(
-                "NewsItemDbDetailsWithId",
-                "NewsItemDbShow/Details/{id}",
+                "RouteDetailsWithId",
+                "{controller}/Details/{id}",
                 new { controller = "NewsItemDbShow", action="Details", id = UrlParameter.Optional},
                 new { id = @"\d+" }
             );
             routes.MapRoute(
-                "NewsItemDbWithNoId",
-                "NewsItemDbShow/{action}",
-                new { controller = "NewsItemDbShow", action = "Index" }
-            );
-            routes.MapRoute(
-                "NewsItemDbDefault",
-                "NewsItemDbShow",
-                new { controller = "NewsItemDbShow", action = "Index" }
+                "RouteWithNoId",
+                "{controller}/{action}",
+                new { controller = "Home", action = "Index" }
             );
             routes.MapRoute(
                 name: "Default",

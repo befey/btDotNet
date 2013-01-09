@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,12 +9,23 @@ namespace btDotNet.Tests.Fakes
 {
     class FakeLocationManager : ILocationManager
     {
+        private List<NewsItemLocation> _locations = new List<NewsItemLocation>();
         public List<NewsItemLocation> Locations
         {
             get
             {
-                return new List<NewsItemLocation> { new NewsItemLocation(@"TestJsonData.json") };
+                return _locations;
             }
-        } 
+        }
+
+        public IEnumerator GetEnumerator()
+        {
+            return _locations.GetEnumerator();
+        }
+
+        FakeLocationManager()
+        {
+            _locations.Add(new NewsItemLocation(@"TestJsonData.json"));
+        }
     }
 }

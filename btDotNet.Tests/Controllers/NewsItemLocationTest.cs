@@ -8,29 +8,29 @@ namespace btDotNet.Tests.Controllers
     [TestClass]
     public class NewsItemLocationTest
     {
-        [TestMethod]
-        public void NewsItemValidHttpLocationConstructorTest()
-        {
-            string loc = @"http://www.badexample.com";
-            var target = new NewsItemLocation(loc);
-            Assert.AreEqual(loc, target.Location);
-        }
+        //[TestMethod]
+        //public void NewsItemValidHttpLocationConstructorTest()
+        //{
+        //    string loc = @"https://ajax.googleapis.com/";
+        //    var target = new NewsItemLocation(loc);
+        //    Assert.AreEqual(loc, target.Location);
+        //}
 
-        [TestMethod]
-        public void NewsItemValidFileLocationConstructorTest()
-        {
+        //[TestMethod]
+        //public void NewsItemValidFileLocationConstructorTest()
+        //{
             
-            string loc = @"TestJsonData.json";
-            var target = new NewsItemLocation(loc);
-            Assert.AreEqual(loc, target.Location);
-        }
+        //    string loc = @"TestJsonData.json";
+        //    var target = new NewsItemLocation(loc);
+        //    Assert.AreEqual(loc, target.Location);
+        //}
 
-        [TestMethod]
-        [ExpectedException(typeof(ArgumentException))]
-        public void NewsItemInvalidLocationConstructorTest()
-        {
-            string loc = "Invalid Location!";
-            var target = new NewsItemLocation(loc);
-        }
+        //[TestMethod]
+        //[ExpectedException(typeof(ArgumentException))]
+        //public void NewsItemInvalidLocationConstructorTest()
+        //{
+        //    string loc = "Invalid Location!";
+        //    var target = new NewsItemLocation(loc);
+        //}
     }
 }

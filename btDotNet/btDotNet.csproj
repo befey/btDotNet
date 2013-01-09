@@ -187,6 +187,7 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NewsItemLocation.cs" />
     <Compile Include="Controllers\NewsItemLocationManager.cs" />
+    <Compile Include="Controllers\QueryShowController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -200,12 +201,14 @@
     <Compile Include="Models\GoogleNewsSearchResults.cs" />
     <Compile Include="Models\NewsItem.cs" />
     <Compile Include="Models\BtDotNetDb.cs" />
+    <Compile Include="Models\Query.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="Query.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
@@ -319,6 +322,11 @@
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Web.config" />
+    <Content Include="Views\QueryShow\Index.cshtml" />
+    <Content Include="Views\QueryShow\Details.cshtml" />
+    <Content Include="Views\QueryShow\Edit.cshtml" />
+    <Content Include="Views\QueryShow\Delete.cshtml" />
+    <Content Include="Views\Shared\_EditQueryPartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

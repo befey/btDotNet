@@ -1,6 +1,8 @@
+using System.Collections;
+
 namespace btDotNet.Controllers
 {
-    public interface ILocationManager
+    public interface ILocationManager : IEnumerable
     {
     }
 }

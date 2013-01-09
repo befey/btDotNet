@@ -1,0 +1,26 @@
+﻿@model IEnumerable<btDotNet.Models.Query>
+
+@{
+    ViewBag.Title = "Queries";
+}
+
+<table>
+@{
+    if (!Model.Any())
+    {
+        @Html.Raw("There are no queries.");
+    }
+}
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.QueryString)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.QueryId }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.QueryId })
+        </td>
+    </tr>
+}
+
+</table>

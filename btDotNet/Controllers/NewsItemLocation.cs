@@ -1,6 +1,8 @@
 using System;
 using System.IO;
 using System.Text.RegularExpressions;
+using System.Web;
+using btDotNet.Models;
 
 namespace btDotNet.Controllers
 {
@@ -17,6 +19,12 @@ namespace btDotNet.Controllers
             }
         }
 
+        public NewsItemLocation(Query q)
+        {
+            Location = "https://ajax.googleapis.com/ajax/services/search/news?v=1.0&rsz=8&q="
+                + HttpUtility.HtmlEncode(q.QueryString);
+        }
+
         public NewsItemLocation(string loc)
         {
             Location = loc;
@@ -24,7 +32,7 @@ namespace btDotNet.Controllers
 
         private bool IsValid(string loc)
         {
-            return (File.Exists(loc) || new Regex(@"\Ahttp:\/\/.+").IsMatch(loc));
+            return (File.Exists(loc) || new Regex(@"\Ahttps:\/\/.+").IsMatch(loc));
         }
     }
 }

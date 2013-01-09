@@ -43,9 +43,7 @@ namespace btDotNet.Controllers
 
         public ActionResult Refresh()
         {
-            ILocationManager manager = new NewsItemLocationManager();
-            //locationManager.AddLocation(new NewsItemLocation(@"TestJsonData.json"));
-            _db.RefreshNewsItems(manager);
+            _db.RefreshNewsItems();
             return RedirectToAction("Index");
         }
     }

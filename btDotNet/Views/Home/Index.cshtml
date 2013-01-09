@@ -1,4 +1,5 @@
-﻿@model IEnumerable<btDotNet.Models.NewsItem>
+﻿@using btDotNet.Controllers
+@model IEnumerable<btDotNet.Models.NewsItem>
 @{
     ViewBag.Title = "Index";
 }
@@ -12,8 +13,7 @@
 
 <h2>@ViewBag.Title</h2>
 
-<h1>@ViewBag.Message</h1>
-
+@Html.Action("CreateQuery", "QueryShow")
 
 <div>
     @Html.ActionLink("Refresh NewsItemDb", "Refresh", "NewsItemDbShow")
